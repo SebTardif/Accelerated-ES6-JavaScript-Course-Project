@@ -4,7 +4,7 @@ import * as ELEMENTS from './elements';
 import { Http } from './http';
 import { WeatherData, WEATHER_PROXY_HANDLER } from './weather-data';
 
-const APP_ID = '036fce7d8a55e7425c5259936b441258';
+const APP_ID = 'Your API Key Here';
 
 ELEMENTS.ELEMENT_SEARCH_BUTTON.addEventListener('click', searchWeather);
 
