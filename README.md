@@ -1,9 +1,10 @@
 # Accelerated-ES6-JavaScript-Course-Project
  Accelerated ES6 JavaScript Course Project: local development setup with babel and webpack
  
+ Course: [Accelerated ES6 JavaScript Training by Maximilian Schwarzmüller](https://www.udemy.com/es6-bootcamp-next-generation-javascript/learn/v4/overview)
+ 
  [Completed Course Project Demo](https://github.com/tyler-austin/Accelerated-ES6-JavaScript-Course-Project/dist/index.html)
  
- Course: [Accelerated ES6 JavaScript Training by Maximilian Schwarzmüller](https://www.udemy.com/es6-bootcamp-next-generation-javascript/learn/v4/overview)
 
 # Attribution:
 
