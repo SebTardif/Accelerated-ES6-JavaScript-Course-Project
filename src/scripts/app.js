@@ -1,4 +1,4 @@
-import '../styles/index.scss';
+import '../styles/app.scss';
 
 import * as ELEMENTS from './elements';
 import { Http } from './http';
@@ -18,11 +18,10 @@ function searchWeather() {
     ELEMENTS.ELEMENT_WEATHER_BOX.style.display = 'none';
     ELEMENTS.ELEMENT_LOADING_TEXT.style.display = 'block';
 
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${APP_ID}`;
+    const URL = `//api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${APP_ID}`;
 
     Http.fetchData(URL)
         .then(responseData => {
-            console.log('Data:', responseData);
             const WEATHER_DATA = new WeatherData(CITY_NAME, responseData.weather[0].description.toUpperCase());
             const WEATHER_PROXY = new Proxy(WEATHER_DATA, WEATHER_PROXY_HANDLER);
             WEATHER_PROXY.temperature = responseData.main.temp;
